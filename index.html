@@ -11,42 +11,81 @@
 
 <body>
 
-    <header>
-
+    <header id="header">
         <nav>
             <div class="content">
                 <h3>Forestal Rio Blanco S.A.</h3>
                 <div class="optiones">
                     <button>Sobre Nosotros</button>
                     <div class="oculto">
-                        <button>Valores</button>
-                        <button>Mision</button>
-                        <button>Vision</button>
-                        <button>Ubicacion</button>
+                        <button><a href="#quienes somos">¿Quienes somos?</a></button>
+                        <button><a href="#direccion">Ubicacion</a></button>
                     </div>
                 </div>
                 <div class="optiones">
                     <button>Contactos</button>
                     <div class="oculto">
-                        <button>Facebook</button>
-                        <button>Instagram</button>
-                        <button>Telefono</button>
-                        <button>Correo</button>
+                        <button><a href="#contactos">Facebook</a></button>
+                        <button><a href="#contactos">Instagram</a></button>
+                        <button><a href="#contactos">Correo</a></button>
+                        <button><a href="#contactos">Telefono</a></button>
                     </div>
                 </div>
                 <div class="optiones">
                     <button>Productos</button>
                     <div class="oculto">
-                        <button></button>
-                        <button>Celosias</button>
-                        <button>Muebles</button>
-                        <button>Madera</button>
+                        <button><a href="#productos">Celosias</a></button>
+                        <button><a href="#productos">Techos y pisos</a></button>
+                        <button><a href="#productos">Madera</a></button>
+                        <button><a href="#info servicios">Servicios</a></button>
                     </div>
                 </div>
                 <div class="optiones">
-                    <button>Contactanos</button>
+                    <button><a style="color: black; text-decoration: none;" href="#info noticias">Noticias</a></button>
                 </div>
             </div>
+            <!-- Opciones que se muestran en movil -->
+            <div class="opciones-moviles-ocultar">
+                <div class="content-movil">
+                    <div class="boton">
+                        <button onclick="aparecer_menu_movil()"><img src="imagenes/lista.png" alt=""></button>
+                    </div>
+                    <div class="texto-movil">
+                        <h4>AQUI ABRA ALGO</h4>
+                    </div>
+                </div>
+                <div id="menu_movil" class="opciones-ocultas-movil">
+                    <button onclick="cerrar_menu_movil()" class="buton-salir-oculto"><img src="imagenes/eliminar.png"
+                            alt=""></button>
+                    <div class="individual-oculto-movil">
+                        <button onclick="cerrar_menu_movil()"> <a href="#header">Inicio</a></button>
+                    </div>
+
+
+                    <div class="grupos-ocultos-movil">
+                        <div class="individual-oculto-movil">
+                            <button onclick="cerrar_menu_movil()"><a href="#quienes somos">¿Quienes Somos?</a></button>
+                        </div>
+                        <div class="individual-oculto-movil">
+                            <button onclick="cerrar_menu_movil()"><a href="#productos">Nuestros Productos</a></button>
+                        </div>
+                        <div class="individual-oculto-movil">
+                            <button onclick="cerrar_menu_movil()"> <a href="#info noticias">Noticias</a></button>
+                        </div>
+
+                        <div class="individual-oculto-movil">
+                            <button onclick="cerrar_menu_movil()"><a href="#clientes">Clientes</a></button>
+                        </div>
+                        <div class="individual-oculto-movil">
+                            <button onclick="cerrar_menu_movil()"><a href="#contactos">Contactos</a> </button>
+                        </div>
+                        <div class="individual-oculto-movil">
+                            <button onclick="cerrar_menu_movil()"><a href="#direccion">Direccion</a> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </nav>
         <div class="titulos">
@@ -87,7 +126,7 @@
                 </div>
                 </a>
 
-                <div class="cont-quienes-somos">
+                <div id="quienes somos" class="cont-quienes-somos">
                     <h1 class="title">¿Quienes Somos?</h1>
                     <p class="info-quienes-somos">
                         Forestal Rio Blanco S.A. se constituyó en 1988 con el objeto de comercializar semillas,
@@ -119,11 +158,11 @@
 
                 </div>
 
-                <div class="info-noticias">
+                <div id="info noticias" class="info-noticias">
                     <h1 class="title es" style="color: white">Noticias</h1>
                     <div class="lados">
                         <div class="derecha">
-                            <p class="info-quienes-somos ese">
+                            <p class="info-quienes-somos ese movil-tamaño">
                                 Tratamiento Térmico (HT) Proceso mediante el cual un producto
                                 básico es sometido al
                                 calor hasta alcanzar una temperatura mínima, durante un
@@ -140,7 +179,8 @@
                                 alt="">
                         </div>
                         <div class="derecha1">
-                            <p class="info-quienes-somos ese">MEDIDAS APROBADAS RELACIONADAS CON EL EMBALAJE DE MADERA
+                            <p class="info-quienes-somos ese movil-tamaño">MEDIDAS APROBADAS RELACIONADAS CON EL
+                                EMBALAJE DE MADERA
                                 Tratamiento térmico (HT)
                                 El embalaje de madera deberá calentarse conforme a una curva específica de
                                 tiempo/temperatura, mediante la cual el centro de la madera alcance una temperatura
@@ -158,7 +198,7 @@
 
                 </div>
 
-                <div class="info-productos">
+                <div id="productos" class="info-productos">
                     <h1 class="title">Productos</h1>
                     <ul class="lista-productos">
                         <li>
@@ -228,8 +268,32 @@
                     </div>
 
                 </div>
+
+                <div id="info servicios" class="info-servicios">
+                    <h1 class="title">Servicios</h1>
+                    <div class="cont-servicios">
+                        <p class="info-quienes-somos">–> Tratamiento Térmico para embalajes y tarimas (HT)
+
+                            502-2313-3500
+
+                            info@rioblanco.com.gt <br> <br>
+
+                            –> Almacenamiento (Carga seca)
+
+                            Bodega de 9.000 m2 bajo techo : Sector Macrolotes, Km. 291 Al Atlántico <br>
+
+                            Puerto Barrios. <br>
+
+                            Teléfono: (502) 7960-0809 <br>
+
+                            Fax : (502) 7960-0810 <br>
+
+                            Mail : ptobarrios@rioblanco.com.gt</p>
+
+                    </div>
+                </div>
                 <!-- ACA ESTA EL LISTADO DE CLIENTES -->
-                <div class="info-productos">
+                <div id="clientes" class="info-productos">
                     <h1 class="title">Principales Clientes</h1>
 
                     <ul class="lista-productos">
@@ -257,7 +321,7 @@
                     </ul>
                 </div>
 
-                <div class="info-contactos">
+                <div id="contactos" class="info-contactos">
                     <h1 class="title">Contactos</h1>
                     <div class="section-contactos">
                         <div class="sec">
@@ -269,7 +333,7 @@
                             <h3>Instagram</h3>
                         </div>
                         <div class="sec">
-                            <div class="arriba">
+                            <div id="direccion" class="arriba">
                                 <ul class="lista-ubicacion">
                                     <li>
                                         Oficinas Centrales: 2 Calle 37-33 Colonia Toledo Zona 11 Guatemala. PBX: (502)
@@ -298,7 +362,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        <h3>Contactenos</h3>
+                            <h3>Contactenos</h3>
 
                         </div>
                     </div>

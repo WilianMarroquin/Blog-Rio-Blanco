@@ -34,17 +34,42 @@ nav {
     height: 50px;
     border-radius: 20px;
 
-}
 
+}
+a{
+    text-decoration: none;
+}
 .oculto {
     transform: scale(0);
     transition: transform .3s;
     display: grid;
-
+    background-color: rgba(240, 248, 255, 0.635);
+    padding: 20px;
+    margin-left: -10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 1, 0.532);
+    border-radius: 10px;
 }
-
+.oculto button{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    
+    color:rgb(0, 112, 0)
+}
+.oculto button a{
+    color:rgb(0, 112, 0);
+}
+.oculto button:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 1, 0.532);
+    cursor: pointer;
+}
 .optiones {
     display: block;
+}
+.optiones button{
+    font-size: 16px;
+    font-weight:bold;
+    cursor: pointer;
 }
 
 .optiones:hover .oculto {
@@ -67,6 +92,7 @@ nav {
     border-radius: 10px;
     margin-top: -100px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 1, 0.532);
+    overflow: hidden;
 }
 
 .info-inicial {
@@ -133,6 +159,7 @@ width: 120%;
 .derecha1{
     padding: 40px;
     color: white;
+
 }
 .izquierda1{
     width: 50%;
@@ -192,4 +219,137 @@ footer{
 .lista-ubicacion{
     font-size: 12.5px;
     line-height: 20px;
+}
+
+.content-movil{
+    display: flex;
+
+}
+.texto-movil{
+    color: white; 
+
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+.boton{
+        position: fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-top: 40px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    left: 13px;
+}
+.boton img{
+  width: 40px;
+margin-top: 8px;  
+}
+.opciones-ocultas-movil{
+    position: fixed;
+    width: 60%;
+    height: 600px;
+    background-color: rgb(0, 112, 0);
+    left: -1200px;
+    top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.347);
+    transition: all .3s;
+}
+.grupos-ocultos-movil{
+    display: grid;
+}
+.individual-oculto-movil{
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.individual-oculto-movil a{
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+}
+.individual-oculto-movil:hover{
+    background-color: aliceblue;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 1, 0.532);
+}
+.individual-oculto-movil:hover a{
+    color: black;
+}
+.buton-salir-oculto{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.buton-salir-oculto img{
+    width: 100%;
+    height: 100%;
+}
+.cont-servicios{
+    padding: 20px;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+@media screen and (max-width: 850px){
+ .content{
+    display: none;
+ }
+
+ .titulos{
+    font-size: 20px;
+ }
+ .info-inicial{
+    font-size: 15px;
+ }
+ .info-ini{
+    width: 90%;
+ }
+ .info-quienes-somos{
+    font-size: 17px;
+ }
+ .izquierda1 img{
+  height: 200px;
+}
+.movil-tamaño{
+    font-size: 10px;
+    line-height: 15px;
+}
+.derecha{
+    padding: 10px;
+}
+.ese{
+    margin-top: 10px;
+}
+.derecha1{
+    padding: 10px;
+}
+.section-contactos{
+    display: block;
+    margin-bottom: 20px;
+}
+.sec{
+    margin-bottom: 30px;
+}
+.sec{
+    color: rgb(168, 165, 165);
+    
+}
+}
+@media  screen and (min-width:850px) {
+    .opciones-moviles-ocultar{
+        display: none; 
+    }
+    
 }
