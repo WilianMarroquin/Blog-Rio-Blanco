@@ -19,7 +19,7 @@
                     <button>Sobre Nosotros</button>
                     <div class="oculto">
                         <button><a href="#quienes somos">¿Quienes somos?</a></button>
-                        <button><a href="#direccion">Ubicacion</a></button>
+                        <button><a href="#ubicacion">Ubicacion</a></button>
                     </div>
                 </div>
                 <div class="optiones">
@@ -60,8 +60,6 @@
                     <div class="individual-oculto-movil">
                         <button onclick="cerrar_menu_movil()"> <a href="#header">Inicio</a></button>
                     </div>
-
-
                     <div class="grupos-ocultos-movil">
                         <div class="individual-oculto-movil">
                             <button onclick="cerrar_menu_movil()"><a href="#quienes somos">¿Quienes Somos?</a></button>
@@ -80,7 +78,7 @@
                             <button onclick="cerrar_menu_movil()"><a href="#contactos">Contactos</a> </button>
                         </div>
                         <div class="individual-oculto-movil">
-                            <button onclick="cerrar_menu_movil()"><a href="#direccion">Direccion</a> </button>
+                            <button onclick="cerrar_menu_movil()"><a href="#ubicacion">Direccion</a> </button>
                         </div>
                     </div>
                 </div>
@@ -106,19 +104,19 @@
                         productos en Guatemala</p>
                 </div>
                 <div class="info-icons">
-                    <a href="">
+                    <a href="#productos">
                         <div class="icon">
                             <img src="imagenes/producto.png" alt="">
                             <h2>Productos</h2>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#contactos">
                         <div class="icon">
                             <img src="imagenes/lista-de-contactos.png" alt="">
                             <h2>Contactos</h2>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#quienes somos">
                         <div class="icon">
                             <img src="imagenes/documento.png" alt="">
                             <h2>Sobre Nosotros</h2>
@@ -288,87 +286,108 @@
 
                             Fax : (502) 7960-0810 <br>
 
-                            Mail : ptobarrios@rioblanco.com.gt</p>
+                            Mail : ptobarrios@rioblanco.com.gt
+                        </p>
+                       <div class="diseño-servicios">
+                        <img src="imagenes/servicio-almacen.jpg" alt="">
+                        <img src="imagenes/servicio-tratamiento.jpg" alt="">
+                       </div>
 
                     </div>
                 </div>
                 <!-- ACA ESTA EL LISTADO DE CLIENTES -->
-                <div id="clientes" class="info-productos">
-                    <h1 class="title">Principales Clientes</h1>
-
-                    <ul class="lista-productos">
-                        <li>
-                            BANDEGUA – Compañía de Desarrollo Bananero de Guatemala S.A.
-                        </li>
-                        <li>
-                            DOLE – Standar Fruit de Guatemala
-                        </li>
-                        <li>
-                            UNILEVER de C.A
-                        </li>
-                        <li>
-                            P & G
-                        </li>
-                        <li>
-                            WESTRADE DE GUATEMALA S.A.
-                        </li>
-                        <li>
-                            OLEFINAS
-                        </li>
-                        <li>
-                            COBIGUA – Compañía. Bananera Guatemalteca Independiente S.A.
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="contactos" class="info-contactos">
-                    <h1 class="title">Contactos</h1>
-                    <div class="section-contactos">
-                        <div class="sec">
-                            <img src="imagenes/facebook.png" alt="">
-                            <h3>Facebook</h3>
+                <div id="clientes" class="info-productos compel">
+                    <div class="texto-clientes">
+                        <h1 class="title">Principales Clientes</h1>
+                        <ul class="lista-productos">
+                            <li>
+                                BANDEGUA – Compañía de Desarrollo Bananero de Guatemala S.A.
+                            </li>
+                            <li>
+                                DOLE – Standar Fruit de Guatemala
+                            </li>
+                            <li>
+                                UNILEVER de C.A
+                            </li>
+                            <li>
+                                P & G
+                            </li>
+                            <li>
+                                WESTRADE DE GUATEMALA S.A.
+                            </li>
+                            <li>
+                                OLEFINAS
+                            </li>
+                            <li>
+                                COBIGUA – Compañía. Bananera Guatemalteca Independiente S.A.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="diseño-clientes">
+                        <div class="imgs">
+                            <img src="imagenes/face1.jpeg" alt="">
                         </div>
-                        <div class="sec">
-                            <img src="imagenes/instagram.png" alt="">
-                            <h3>Instagram</h3>
+                        <div class="imgs">
+                            <img src="imagenes/face2.webp" alt="">
                         </div>
-                        <div class="sec">
-                            <div id="direccion" class="arriba">
-                                <ul class="lista-ubicacion">
-                                    <li>
-                                        Oficinas Centrales: 2 Calle 37-33 Colonia Toledo Zona 11 Guatemala. PBX: (502)
-                                        2313-3500 Mail: info@rioblanco.com.gt
-                                    </li>
-                                    <li>
-                                        –Planta Industrial “ El Rancho”: Km. 84.5 Carretera Al Atlántico.
-
-                                        Teléfono: (502) 7928-8700
-
-                                        Mail : rancho@rioblanco.com.gt
-                                    </li>
-                                    <li>
-                                        –Planta Industrial Macrolotes: Km. 291 Carretera Al Atlántico
-
-                                        Teléfono: (502)7942-9806
-                                    </li>
-                                    <li>
-                                        –Ventas Madera Aserrada-Impregnada“ Supermercado de Maderas Rio Blanco”
-
-                                        32 calle 4-09 Zona 3. Guatemala
-
-                                        2475-5574—-2475-5576
-
-                                        Despachos a domicilio
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3>Contactenos</h3>
-
+                        <div class="imgs">
+                            <img src="imagenes/face4.webp" alt="">
+                        </div>
+                        <div class="imgs">
+                            <img src="imagenes/face5.jpg" alt="">
                         </div>
                     </div>
 
 
+                </div>
 
+                <div id="ubicacion" class="info-ubicacion">
+                    <h1 class="title">¿Como ubicarnos?</h1>
+                    <div class="info-ubi">
+                        <ul class="lista-ubicacion">
+                            <li>
+                                Oficinas Centrales: 2 Calle 37-33 Colonia Toledo Zona 11 Guatemala. PBX: (502)
+                                2313-3500 Mail: info@rioblanco.com.gt
+                            </li>
+                            <li>
+                                –Planta Industrial “ El Rancho”: Km. 84.5 Carretera Al Atlántico.
+
+                                Teléfono: (502) 7928-8700
+
+                                Mail : rancho@rioblanco.com.gt
+                            </li>
+                            <li>
+                                –Planta Industrial Macrolotes: Km. 291 Carretera Al Atlántico
+
+                                Teléfono: (502)7942-9806
+                            </li>
+                            <li>
+                                –Ventas Madera Aserrada-Impregnada“ Supermercado de Maderas Rio Blanco”
+
+                                32 calle 4-09 Zona 3. Guatemala
+
+                                2475-5574—-2475-5576
+
+                                Despachos a domicilio
+                            </li>
+                        </ul>
+                        <div class="mapa-ubicacion">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.201189449464!2d-90.02195219059008!3d14.9258803855399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589fd482695e981%3A0x54fb65378fd031e1!2sF.Rio%20Blanco%20S.A.!5e0!3m2!1ses!2sgt!4v1687801655208!5m2!1ses!2sgt"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="contactos"  class="contactos">
+                    <div class="grupo-contactos">
+                        <h3>¡Contactanos!</h3>
+                        <img src="imagenes/facebook.png" alt="">
+                        <img src="imagenes/instagram.png" alt="">
+                        <img src="imagenes/gmail.png" alt="">
+                        <img src="imagenes/llamada-telefonica (1).png" alt="">
+                        <img src="imagenes/llamada-telefonica.png" alt="">
+                    </div>
                 </div>
             </div>
 
